@@ -1,9 +1,11 @@
+import random
+
 print(***********************************)
 print("Bem vindos ao jogo da adivinhação")
 print(***********************************)
 
-numero_secreto = 42
-total_de_tentativas = 3
+numero_secreto = random.randrange(1,101)
+total_de_tentativas = 10
 rodada = 1
 
 while (rodada <= total_de tentativas):
@@ -16,12 +18,12 @@ while (rodada <= total_de tentativas):
 
     if(acertou):
         print("parabens, você acertou")
-        else
-        if(maior)
-        print("o seu chute foi maior do que o número secreto")
-        elf(menor):
-        print("o seu chute foi menor do queo número secreto")
-        rodada = rodada +1
-        print("fim de jogo")
+    else:
+        if(maior):
+           print("o seu chute foi maior do que o número secreto")
+        elif(menor):
+           print("o seu chute foi menor do queo número secreto")
+    rodada = rodada +1
+print("fim de jogo")
 
 
