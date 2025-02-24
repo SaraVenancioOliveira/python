@@ -1,4 +1,4 @@
-nome = str(input("digite seu nome"))
+                                                                                                                                                                                                                                                                                                nome = str(input("digite seu nome"))
 cpf = float(input("digite seu cpf"))
 rg = float(input("digite o seu rg"))
 numero = int(input("digite o seu numero de celular"))
