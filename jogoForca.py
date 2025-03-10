@@ -1,21 +1,32 @@
-print("*******************")
-print("Bem vindo ao jogo")
-print("*******************")
+print("**************************")
+print("Bem vindo ao jogo da forca")
+print("**************************")
 
-palavra_secreta = "morango"
+palavra_secreta = "amora".upper()
+
+letras_acertadas = ["_", "_", "_", "_", "_"]
+print(letras_acertadas)
 
 enforcou = False
 acertou = False
-
+erros = 0
 while(not enforcou and not acertou):
-    chute = input("Qual a letra?")
-    chute = chute.strip()
+    chute = input("Qual a letra? ")
+    chute = chute.strip().upper()
 
-    index = 0
+    if (chute in palavra_secreta):
+        index = 0
+        for letra in palavra_secreta:
+            if (chute.upper() == letra.upper()):
+                letras_acertadas[index] = letra
+            index = index + 1  
+        enforcou = erros == 6
+        acertou = "_" not in letras_acertadas                                                                                                                                
+        print(letras_acertadas)
 
-    for letra in palavra_secreta:
-        if (chute.upper() == letra.upper()):
-            print(f"encontre a letra {letra} na posição{index}")
-        index = index + 1
-    print("jogando....")
-print("Fim de jogo")
+
+if(acertou):
+    print("você ganhou!")
+else:
+    print("você perdeu!")
+
