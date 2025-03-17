@@ -31,3 +31,9 @@ while True:
             print(f" nome: {cliente[nome]}")
             print(f"telefone: {cliente}")
 
+    elif opcao ='3':
+        print("\n Saindo do Sistema")
+        break
+
+    else:
+        print("\n Opção invalida")
